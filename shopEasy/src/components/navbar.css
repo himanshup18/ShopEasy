@@ -1,0 +1,163 @@
+.navbar{
+   background-color:#ddd;
+   box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+   padding: 6px;
+   position: fixed;
+   width: 100vw;
+   height: 7vh;
+   z-index: 2;
+   top: 0px;
+   justify-items: center;
+}
+.heading{
+   text-decoration: none;
+   margin-left: 4px;
+ }
+.nav_heading{
+  padding: 4px;
+  font-size: 1.1em;
+  color:white;
+  background-color: black;
+  width:auto;
+   }
+
+   .nav_heading::after{
+     margin-left: 4px;
+    padding: 2px;
+     color: black;
+     content: 'Catalog';
+     background-color: orange;
+     border-radius:10px ;
+   }
+
+.nav__menu{
+    position: fixed;
+    inset-block: 0;
+    left:-100%;
+    background-color:#ddd;
+    width: 100vw;
+    padding: 60px 30px;
+     transition: all 0.5s cubic-bezier(0.77,0.2,0.05,1); 
+     z-index: 10;
+     padding-top: 0px;
+     display: flex;
+     justify-content: center;
+}
+
+.back_btn{
+    width:20px;
+    background-color: transparent;
+    border: none;
+    margin-top: 7px;
+    font-size: 15px;
+}
+.show-menu{
+    left: 0;
+} 
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:30vh;
+ }
+
+ .cart{
+    font-size: 20px;
+    border-bottom:1px solid gray;
+ }
+
+.nav__name{
+    font-weight: 500;
+}
+
+ .nav__toggle{
+    position: fixed;
+    top: 5vh;
+    left: 90vw;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 12px 10px; 
+    z-index: 101;
+cursor: pointer;
+}
+
+ .nav__toggle span{
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: gray;
+    margin-bottom: 4px;
+    position: relative;
+    top:-30px;
+ }
+
+
+
+ .animated-toggle span:first-child {
+   transform:rotate(45deg) translate(6px, 4px);
+ }
+
+ .animated-toggle span:nth-child(2) {
+   display: none;
+  }
+    
+  .animated-toggle span:last-child {
+    transform:rotate(-45deg) translate(1px ,1px);
+  }
+
+  
+   @media screen and (min-width:1024px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color:#ddd;
+       box-shadow:  0 4px 6px rgba(0, 0, 0, 0.1);
+       padding: 6px;
+       position: fixed;
+       width: 100vw;
+       z-index: 2;
+       top: 0px;
+       height: 70px;
+       overflow-x: hidden;
+    }
+    .nav_heading{
+      padding: 8px;
+      font-size: 1.4em;
+      color:white;
+      background-color: black;
+      width:auto;
+      margin-left: 2vw;
+       }
+    
+       .nav_heading::after{
+         margin-left: 4px;
+        padding: 2px;
+         border-radius:10px ;
+       }
+    
+     .nav__menu{
+        all:unset;
+     }
+     .nav__toggle{
+        display: none;
+     }
+
+.btn{
+    display: flex;
+    flex-direction: row;
+   position: absolute;
+   top:2vh;
+   left:72vw;
+   color: white;
+   z-index: 2;
+}
+     
+.back_btn{
+    display: none;
+}
+   }  

@@ -1,0 +1,266 @@
+.box {
+    margin-top: 80px;
+    
+}
+
+.prod-details{
+   height: auto;
+   padding: 30px;
+}
+
+.prod {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod-image{
+    width: 25vw;
+    height: 50vh;
+    border-radius: 8px;
+    transition: all 0.3s;
+    position:static;
+    margin-right: 20px;
+    border: 1px solid grey;
+}
+
+.prod-image:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.prod-info {
+    padding: 20px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+   width: 55vw;
+  min-height:70vh;
+}
+
+.prod-title {
+    margin: 10px 0;
+    font-size: 24px;
+
+}
+
+.prod-description {
+    margin-bottom: 10px;
+   text-align: start;
+}
+
+
+.prod-specs {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color:orangered;
+  }
+  
+  .specs-list {
+    list-style: none;
+    padding: 0;
+     display: flex;
+     align-items: start;
+     flex-direction: column;
+  }
+  
+  .specs-list li {
+    margin-bottom: 5px;
+    display: flex;
+  }
+  
+  .speci-key {
+    display: inline-block;
+    color: grey;
+    font-weight: bold;
+    height: 20px;
+    width: 120px;
+    
+     text-align: start;
+  }
+  
+  .speci-value {
+    display: inline-block;
+    text-align: start;
+    color: black;
+    width: 40vw;
+word-wrap: break-word;
+  }
+
+.prod-rating {
+    font-size: 13px;
+    background-color: rgb(2, 82, 2);
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.star{
+    font-size: 10px;
+}
+
+p span{
+    font-weight: 500;
+}
+
+.add-to-cart,
+.add-to-wishlist {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:15vw;
+    height: 7vh;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.add-to-cart:hover,
+.add-to-wishlist:hover {
+    background-color: #0056b3;
+}
+
+.go-to-cart{
+    width: 20vw;
+}
+
+.filledheart{
+    margin: 0 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width:15vw;
+    height: 7vh;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: red;
+}
+
+@media screen and (max-width: 760px) {
+   
+
+    .prod-details {
+        display: block;
+        padding: 20px;
+    }
+
+    .prod {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prod-image {
+        width: 80vw;
+        height: auto;
+        margin-right: 0;
+        border-radius: 8px;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+    }
+
+    .prod-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start; 
+       width: 90vw;
+      height: auto;
+    }
+
+    .prod-title {
+        margin: 5px 0;
+        font-size: 20px;
+    }
+
+    .prod-specs {
+        font-weight: bold;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .specs-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .specs-list li {
+        margin-bottom: 3px;
+        display: flex;
+    }
+
+    .speci-key {
+        color: grey;
+        font-weight: bold;
+        margin-right: 5px;
+        height: auto;
+    }
+
+    .speci-value {
+        text-align: start;
+        color: black;
+        width: 50vw;
+        word-wrap: break-word;
+    }
+
+    .prod-rating {
+        font-size: 14px;
+    }
+
+    p span {
+        font-weight: 500;
+    }
+
+    .action-buttons {
+        width:100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        box-shadow:10px 10px 18px rgba(0, 0, 0, 0.1);
+        background-color: white;
+position: fixed;
+top: 82vh;
+    }
+
+    .add-to-cart,
+    .add-to-wishlist {
+        width: 38vw;
+        margin: 5px;
+        padding: 8px;
+        font-size: 1.2em;
+        position: relative;
+left:-8vw;
+    }
+
+    .add-to-cart{
+        left:-9vw;
+    }
+   
+    .go-to-cart{
+       padding: 10px;
+    }
+    .filledheart{
+        width: 38vw;
+        margin: 5px;
+        padding: 8px;
+        font-size: 1.2em;
+        position: relative;
+left:-8vw;
+    }
+}
+
